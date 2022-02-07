@@ -290,3 +290,73 @@ h1 {
 #to-let-section .heading-two h1 {
     margin-bottom: 20px
 }
+
+
+/*
+* ===============================
+*  Footer
+* ===============================
+*/
+
+footer {
+    background: #00319D;
+    padding: 163px 0 63px
+}
+
+footer .footer-top {
+    padding-bottom: 95px;
+}
+
+footer .footer-top .logo {
+    margin-bottom: 40px;
+}
+
+footer .footer-top .subscribtion-form {
+    max-width: 276px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+footer .footer-top .subscribtion-form .form-control{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    margin-bottom: 10px;
+}
+
+footer .footer-top .footer-item ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-top .footer-item h3 {
+    color: #E3F6CF;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+footer .footer-top .footer-item li {
+    margin-bottom: 15px;
+}
+
+footer .footer-top .footer-item li:last-child {
+    margin-bottom: 0;
+}
+
+footer .footer-top .footer-item li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer .footer-bottom {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .footer-bottom a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
