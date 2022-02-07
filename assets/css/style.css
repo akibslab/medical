@@ -12,6 +12,10 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 1210px;
+}
+
 
 /*
 * ===============================
@@ -147,7 +151,6 @@ h1 {
     left: 0;
 }
 
-
 #about-hero-section .left-area .button-box {
     margin-top: 18px;
 }
@@ -203,4 +206,34 @@ h1 {
     position: absolute;
     bottom: -25px;
     right: -25px;
+}
+
+/*
+* ===============================
+*  We & You Section
+* ===============================
+*/
+
+#we-and-you-section {
+    background: #00319D;
+    padding: 88px 0 56px;
+}
+
+#we-and-you-section .heading-three h1 {
+    font-weight: 500;
+    font-size: 46.18px;
+    color: #7CCF24;
+    letter-spacing: -0.02em;
+    margin-right: 30px;
+}
+
+#we-and-you-section .item-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 18px;
+}
+#we-and-you-section .item-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 18px;
 }
