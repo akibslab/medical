@@ -16,7 +16,6 @@ img {
     max-width: 1210px;
 }
 
-
 /*
 * ===============================
 *  Typograpgy
@@ -36,6 +35,19 @@ h1 {
     font-size: 46.18px;
     font-weight: 600;
     color: #00319D;
+}
+
+h2 {
+    font-size: 46.18px;
+    font-weight: 500;
+    color: #00319D;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 46.18px;
+    color: #7CCF24;
+    letter-spacing: -0.02em;
 }
 
 .button-primary {
@@ -69,27 +81,108 @@ h1 {
     margin-right: 60px;
 }
 
-.header .main-menu {
+.header .header-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.header .main-menu li {
+.header .header-menu>ul>li {
     display: inline-block;
     margin-right: 40px;
 }
 
-.header .main-menu li:last-child {
+.header .header-menu ul li {
+    position: relative;
+}
+
+.header .header-menu ul li:last-child {
     display: inline-block;
     margin-right: 0;
 }
 
-.header .main-menu a {
+.header .header-menu ul a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: #00319D;
+    padding: 15px 0;
+    display: block;
+}
+
+.header .header-menu ul>li>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 120px;
+    background: #7CCF24;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.header .header-menu ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.header .header-menu ul>li>ul>li.has-submenu:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 5px;
+    height: 6px;
+    background: url("../img/icons/caret-down.png") no-repeat;
+    margin-top: -3px;
+}
+
+.header .header-menu ul>li>ul li a {
+    color: #fff;
+    padding: 8px 30px 8px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.header .header-menu ul>li>ul li a:hover {
+    color: #ffffff;
+    background: #00319D;
+}
+
+.header .header-menu ul>li>ul>li>ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 5px;
+    min-width: 120px;
+    background: #34323D;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.header .header-menu ul>li>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
 }
 
 .header .button-box {
@@ -165,7 +258,7 @@ h1 {
     position: absolute;
     left: -75px;
     top: 461px;
-    max-width: 273px;
+    max-width: 275px;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid rgba(56, 88, 207, 0.07);
@@ -219,11 +312,7 @@ h1 {
     padding: 88px 0 56px;
 }
 
-#we-and-you-section .heading-three h1 {
-    font-weight: 500;
-    font-size: 46.18px;
-    color: #7CCF24;
-    letter-spacing: -0.02em;
+#we-and-you-section h3 {
     margin-right: 30px;
 }
 
@@ -231,11 +320,17 @@ h1 {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 18px;
+    padding: 35px 20px;
+    max-width: 464px;
 }
-#we-and-you-section .item-box {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    font-size: 18px;
+
+#we-and-you-section .item-box .icon {
+    margin-right: 24px;
+}
+
+#we-and-you-section .item-box p {
+    color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 
@@ -247,20 +342,22 @@ h1 {
 
 #the-big-problem-section {
     padding: 120px 0;
+    background: #F6FCEF;
 }
 
-#the-big-problem-section .heading-two {
+#the-big-problem-section h2 {
+    margin-bottom: 25px;
+}
+
+#the-big-problem-section .content {
     max-width: 458px;
     width: 100%;
-    margin-top: 25px;
+    margin: 0 auto;
 }
 
-#the-big-problem-section .heading-two h1 {
-    margin-bottom: 15px;
-}
-
-#the-big-problem-section .heading-two p {
+#the-big-problem-section .content p {
     font-weight: 500;
+    color: rgba(36, 57, 133, 0.85);
 }
 
 /*
@@ -277,14 +374,16 @@ h1 {
     background-repeat: no-repeat;
 }
 
-#to-let-section .left-area {
-    margin-top: 40px;
+#to-let-section h2 {
+    margin-bottom: 25px
 }
 
-#to-let-section .heading-two {
-    max-width: 498px;
-    width: 100%;
+#to-let-section .content p {
     margin-bottom: 40px;
+    font-weight: 500;
+    color: #1D1F25;
+    max-width: 480px;
+    width: 100%;
 }
 
 #to-let-section .heading-two h1 {
