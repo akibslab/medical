@@ -12,6 +12,9 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 1210px;
+}
 
 /*
 * ===============================
@@ -162,7 +165,7 @@ h1 {
     position: absolute;
     left: -75px;
     top: 461px;
-    max-width: 273px;
+    max-width: 275px;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid rgba(56, 88, 207, 0.07);

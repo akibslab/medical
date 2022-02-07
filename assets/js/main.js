@@ -7,6 +7,9 @@
 		$('#menu').slicknav({
 	        closeOnClick:true,
 	    });
+
+	    // Add an Class to the <li> if has Submenu
+    	$('.header .main-menu ul li:has(ul)').addClass('has-submenu');
         
     });
 
