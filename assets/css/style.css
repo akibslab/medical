@@ -237,3 +237,56 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 18px;
 }
+
+
+/*
+* ===============================
+*  The Big Problems Section
+* ===============================
+*/
+
+#the-big-problem-section {
+    padding: 120px 0;
+}
+
+#the-big-problem-section .heading-two {
+    max-width: 458px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#the-big-problem-section .heading-two h1 {
+    margin-bottom: 15px;
+}
+
+#the-big-problem-section .heading-two p {
+    font-weight: 500;
+}
+
+/*
+* ===============================
+*  To let Section
+* ===============================
+*/
+
+#to-let-section {
+    padding: 120px 0;
+    background-image: url(../img/to-let/bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#to-let-section .left-area {
+    margin-top: 40px;
+}
+
+#to-let-section .heading-two {
+    max-width: 498px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#to-let-section .heading-two h1 {
+    margin-bottom: 20px
+}
