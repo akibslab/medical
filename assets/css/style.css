@@ -20,26 +20,27 @@ img {
 */
 body {
     font-family: 'Urbanist', sans-serif;
-    color: #243985;
+    font-size: 20.25px;
+    color: #2C2F38;
+}
+
+h1 {
+    font-size: 46.18px;
+    font-weight: 600;
+    color: #00319D;
 }
 
 .button-primary {
     background: #7CCF24;
     border-radius: 40px;
-    padding: 12px 16px;
+    padding: 11px 17px;
     font-size: 14.22px;
-    line-height: 20px;
     color: #212121;
 }
 
-.button-secondary {
-    background: #7CCF24;
-    border-radius: 40px;
+.button-primary.lg {
     padding: 16px 24px;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #212121;
 }
 
 /*
@@ -47,8 +48,12 @@ body {
 *  Header
 * ===============================
 */
+.header {
+    padding: 20px 0;
+}
+
 .header .logo {
-   padding-right: 15px;
+    margin-right: 60px;
 }
 
 .header .main-menu {
@@ -57,12 +62,17 @@ body {
     padding: 0;
 }
 
-.header .main-menu li{
+.header .main-menu li {
     display: inline-block;
-    padding: 0 20px;
+    margin-right: 40px;
 }
 
-.header .main-menu a{
+.header .main-menu li:last-child {
+    display: inline-block;
+    margin-right: 0;
+}
+
+.header .main-menu a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -91,33 +101,36 @@ body {
 */
 #about-hero-section {
     padding: 84px 0 71px;
+    background-image: url(../img/about-hero-section/bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-#about-hero-section .left-area h1{
-    font-weight: 600;
-    font-size: 46.18px;
-    color: #00319D;
-    margin-bottom: 30px;
+#about-hero-section .left-area {
+    padding-top: 50px;
 }
 
-#about-hero-section .left-area p {
-    font-size: 20.25px;
-    color: #2C2F38;
+#about-hero-section .left-area h1 {
     margin-bottom: 24px;
 }
 
-#about-hero-section .left-area ul{
+#about-hero-section .left-area p {
+    margin-bottom: 24px;
+}
+
+#about-hero-section .left-area ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 
-#about-hero-section .left-area ul li{
+#about-hero-section .left-area ul li {
     position: relative;
     padding: 0 10px 10px 30px;
 }
 
-#about-hero-section .left-area ul li .icon{
+#about-hero-section .left-area ul li .icon {
     position: absolute;
     top: 6px;
     left: 0;
